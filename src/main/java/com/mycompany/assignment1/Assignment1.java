@@ -17,7 +17,7 @@ public class Assignment1 {
         String[] months = new String[12];// variable for month
         int[] temp2023 = new int[12]; //variable for tempurate in 2023
         int[] temp2024 = new int[12];//variable for tempurate in 2024
-        String SearchName; //variable for linearsearch for user to enter data to be stored here.
+        String searchName; //variable for linearsearch for user to enter data to be stored here.
         int year2023 = 0; //variable created for average calculation this are will store the total and then divide by 12.
         int year2024 = 0;//variable created for average calculation this are will store the total and then divide by 12.
 
@@ -70,11 +70,11 @@ public class Assignment1 {
  
     /** Asking user which particular month they want to search  **/
     System.out.println("Please enter a particular month to seach (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov and Dec) :");
-    SearchName = s.next();//user input is stored in variable SearchName
+    searchName = s.next();//user input is stored in variable SearchName
  
     /** Linear search **/
     for(int i=0; i<12; i++) {
-        if(SearchName.equals (months[i])){
+        if(searchName.equals (months[i])){
        System.out.println(months[i] + " " + "2023:" + " "+ temp2023[i] + " " + "2024:" + " "+ temp2024[i]); //displays the month and the corresponding temperature for what the user asked for.
     }
  
